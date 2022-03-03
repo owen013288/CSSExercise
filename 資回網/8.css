@@ -1,0 +1,261 @@
+
+::-webkit-input-placeholder
+{
+  font-size: 1.000em;
+  font-family:'Noto Sans TC','Microsoft JhengHei', serif,"Times New Roman", Times;
+}
+::-moz-placeholder
+{
+  font-size: 1.000em;
+  font-family:'Noto Sans TC','Microsoft JhengHei', serif,"Times New Roman", Times;
+}
+:-ms-input-placeholder
+{
+  font-size: 1.000em;
+  font-family:'Noto Sans TC','Microsoft JhengHei', serif,"Times New Roman", Times;
+}
+::-ms-input-placeholder
+{
+  font-size: 1.000em;
+  font-family:'Noto Sans TC','Microsoft JhengHei', serif,"Times New Roman", Times;
+}
+body,html,*, ::placeholder
+{
+  font-size: 1.000em;
+  font-family:'Noto Sans TC','Microsoft JhengHei', serif,"Times New Roman", Times;
+}
+*,
+  *:after,
+  *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  /* 無障礙  start */
+input:focus,
+ select:focus, 
+ button:focus, 
+ a:focus,
+ area:focus, 
+ textarea:focus{
+  outline : 3px dotted orange !important;
+}
+/* 無障礙  end */
+
+/* 統計圖下方說明連結 */
+div.p-desc{
+  text-align: center;
+}
+/* 統計圖下方說明連結 */
+body,a{
+    color:#7e7e7e ;
+}
+/* .basic-gray{
+    color:#484848;
+} */
+.desc{
+  padding :30px;
+}
+.desc ol{
+  list-style-type: decimal;
+}
+.basic-green{
+    color:#218c44;
+}
+.hidden-action{
+  display: none;
+}
+/* banner */
+.banner{
+  width: 100%;
+  height: 295px;
+  -webkit-box-shadow: 0 8px 7px -5px rgba(0,0,0,.3) inset;
+          box-shadow: 0 8px 7px -5px rgba(0,0,0,.3) inset;
+  background-image: url(/../../VueResource/img/banner1.bf3a2d94.jpg);
+  background-position:0% 50%;
+  /* background-position-x: -13%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0 21.9%;
+}
+.banner h1{
+  color: #ffffff;
+  /* font-size: 56px; */
+  font-size: 3.5rem;
+  font-weight: bold;
+  position: absolute;
+  /* left: 22%; */
+  top: 40%;
+}
+
+/* 本會簡介區 */
+/* breadcrumb */
+.breadcrumb{
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  border-bottom:1px solid #d6d6d6;
+  /* padding: 0 420px; */
+  padding:0 22%;
+}
+.breadcrumb ol{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+}
+.breadcrumb li{
+ padding-right:23px;
+  /* padding: 0 2.3%;  */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumb li:first-child{
+  width: 85px;
+}
+.breadcrumb li:first-child a i{
+  margin-right: 7px;
+}
+.breadcrumb li:last-child a{
+  color:#3c5d96;
+}
+.breadcrumb li+li{
+  padding-left: 0%;
+}
+.breadcrumb a,.breadcrumbFont{
+  /* font-size: 14px; */
+  font-size: 0.875em;
+  text-decoration: none;
+}
+.breadcrumb li+li:before{
+  content:'>';
+  margin-right: 26px;
+}
+.title-bottom-line {
+  /* font-size: 30px; */
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 45px;
+  position: relative;
+  margin-bottom: 55px;
+  /* margin-bottom: 3.7%; */
+}
+.title-bottom-line:before{
+  content: '';
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: 130%;
+  background: #27ab53;
+}
+/* 2欄共用設定 */
+.two-pieces{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.explain{
+  width: 50%;
+  /* margin-bottom: 100px; */
+  margin-bottom: 9%;
+}
+.chart{
+  width: 50%;
+}
+.chart img,.explanation img{
+  display: block;
+  width: 100%;
+}
+
+/* 獎勵金、我要資料 */
+.list-menu{
+  width: 100%;
+  height: 80px;
+  padding: 0 22%;
+  background-color: #f0f0f0;
+}
+.items{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.items li{
+ width:calc((100% - 2%)/5);
+  height: 80px;
+}
+.items li a{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color:#484848;
+    font-size: 1.125rem;
+}
+::-webkit-input-placeholder{
+  font-size: 1.063em;
+}
+::-moz-placeholder{
+  font-size: 1.063em;
+}
+:-ms-input-placeholder{
+  font-size: 1.063em;
+}
+::-ms-input-placeholder{
+  font-size: 1.063em;
+}
+::placeholder{
+  font-size: 1.063em;
+}
+/* rwd後折行行高 */
+.WrapLineHeight{
+  display: inline-block;
+  height: auto;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+.svg-inline--fa{
+  margin-right: 7px;
+}
+@media screen and (max-width:1600px){
+  /* banner */
+.banner{
+    padding:0 9%;
+}
+}
+@media screen and (max-width:768px){
+.banner h1 {
+    color: #ffffff;
+    /* font-size: 56px; */
+    font-size: 3.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+}
+}

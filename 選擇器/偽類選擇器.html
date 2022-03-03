@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*love hate按照順序*/
+        a:link {
+            /*未被訪問的*/
+            color: red;
+        }
+
+        a:visited {
+            /*已被訪問的*/
+            color: orange;
+        }
+
+        a:hover {
+            /*屬標在其位置上*/
+            color: yellow;
+        }
+
+        a:active {
+            /*按下未彈起*/
+            color: green;
+        }
+
+        /*獲得焦點*/
+        input:focus {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    連結偽類
+    <a href="##">未訪問</a>
+    <a href="#">已訪問</a>
+
+    <input type="text">
+</body>
+
+</html>

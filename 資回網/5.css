@@ -1,0 +1,42 @@
+.Search .cse .gsc-search-button-v2,
+.gsc-search-button-v2 {
+  padding: 10px 10px !important;
+  background-color: #27ab53 !important;
+  border: 1px solid #666 !important;
+  border-radius: 5px !important;
+  border-color: transparent !important;
+  cursor: pointer !important;
+}
+table.gsc-search-box td.gsc-input {
+  padding: 0px;
+}
+input.gsc-input {
+  padding: 0px;
+  border: none;
+}
+.gsc-input-box {
+  border-radius: 5px !important;
+}
+.gsc-input input.gsc-input {
+  background: none !important;
+  height: 25px !important;
+}
+.gsc-control-cse {
+  background-color: transparent !important;
+  border: 0px !important;
+}
+@media (max-width: 1279px) {
+table.gsc-search-box td.gsc-input {
+    position: relative !important;
+}
+.gsc-input-box {
+    width: 50px !important;
+    position: absolute !important;
+    right: 6px !important;
+    top: 0px !important;
+}
+.gsc-input-box {
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+}
