@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 行內 -> 塊*/
+        a {
+            width: 150px;
+            height: 152px;
+            background-color: red;
+            /* 加了才能用高與寬 */
+            display: block;
+        }
+
+        /* 塊 -> 行內*/
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            /* 加了就變成行內元素，但不能設置高與寬了*/
+            display: inline;
+        }
+
+        /*行內 -> 行內塊*/
+        span {
+            width: 100px;
+            height: 30px;
+            background-color: skyblue;
+            /*加了變成行內塊*/
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">行內元素</a>
+    <div>塊元素</div>
+    <span>行內元素</span>
+</body>
+
+</html>
