@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .box {
+            width: 298px;
+            height: 415px;
+            background-color: #fff;
+            /* 水平居中 */
+            margin: 100px auto;
+        }
+
+        .box img {
+            /* 圖片太大，所以改成跟父親一樣寬 */
+            width: 100%;
+            height: 250px;
+        }
+
+        .review {
+            height: 50px;
+            font-size: 14px;
+            /* 因為這個段落沒有設置寬度，所以padding不會撐開盒子 */
+            /* 因為有高度所以這邊不設高度 */
+            padding: 0 28px;
+            margin-top: 30px;
+        }
+
+        .appraise {
+            font-size: 12px;
+            color: #b0b0b0;
+            margin-top: 20px;
+            padding: 0 28px;
+        }
+
+        .info {
+            font-size: 14px;
+            margin-top: 15px;
+            padding: 0 28px;
+        }
+
+        .info h4 {
+            display: inline-block;
+        }
+
+        .info span {
+            color: #ff6700;
+        }
+
+        .info em {
+            font-style: normal;
+            color: #ebe4e0;
+            margin: 0 6px 0 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="/images/呆呆.jpg" alt="">
+        <p class="review">這是蠟筆小新裡面的呆呆</p>
+        <div class="appraise">來自於 117384323 的評價</div>
+        <div class="info">
+            <h4><a href="#">蠟筆小新的呆呆真可愛...</a></h4>
+            <em>|</em>
+            <span>99.9元</span>
+        </div>
+    </div>
+</body>
+
+</html>
