@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            height: 400px;
+            width: 400px;
+            background-color: purple;
+            margin-top: 100px;
+            padding: 1px;
+        }
+
+        .son {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            /* 加這個會塌陷(父親跟兒子看誰大就選誰) 除非父親用內邊距*/
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">
+
+        </div>
+    </div>
+</body>
+
+</html>
