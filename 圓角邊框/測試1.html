@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .radius {
+            width: 100px;
+            height: 100px;
+            /* 就是角塞一個半徑為10px圓去改變邊框 */
+            border-radius: 10px;
+            background-color: pink;
+        }
+
+        .radius2 {
+            width: 100px;
+            height: 100px;
+            /* 左上右上右下左下(順時針) */
+            border-radius: 10px 20px 30px 40px;
+            background-color: pink;
+        }
+
+        .radius3 {
+            width: 100px;
+            height: 100px;
+            /* 左上右下、右上左下(對角線) */
+            border-radius: 10px 200px;
+            background-color: pink;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            /* 圓 */
+            border-radius: 50%;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="radius"></div>
+    <hr>
+    <div class="radius2"></div>
+    <hr>
+    <div class="radius3"></div>
+    <hr>
+    <div class="circle"></div>
+</body>
+
+</html>
