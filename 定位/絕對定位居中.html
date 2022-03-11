@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            /* 1. left走50% */
+            left: 50%;
+            /* 2. margin負值 往左邊走 */
+            margin-left: -100px;
+            /* 3. top走50% */
+            top: 50%;
+            /* 4. margin負值 往上面走 */
+            margin-top: -100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 加定位，是無法透過下面使用水平居中 */
+            /* margin: auto; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
