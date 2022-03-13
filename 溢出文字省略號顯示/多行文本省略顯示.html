@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 65px;
+            background-color: pink;
+            margin: 100px auto;
+            /* 溢出的部分隱藏 */
+            overflow: hidden;
+            /* 文字用省略號替代超出部分 */
+            text-overflow: ellipsis;
+            /* 彈性伸縮盒子模型顯示 */
+            display: -webkit-box;
+            /* 限制在一個塊元素顯示的文本的行數 */
+            -webkit-line-clamp: 3;
+            /* 設置或檢索伸縮盒對象的紫園素的排列方式 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        啥也不說，此處省略一萬字，啥也不說，此處省略一萬字啥也不說，此處省略一萬字
+    </div>
+</body>
+
+</html>
