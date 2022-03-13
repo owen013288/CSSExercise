@@ -78,6 +78,10 @@ li{
     font-size: 14px;
     color: #666;
 }
+.user img{
+    /* 圖片和文字垂直居中對齊 */
+    vertical-align: middle;
+}
 /* banner區域 */
 .banner{
     height: 421px;
