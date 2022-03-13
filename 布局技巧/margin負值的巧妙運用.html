@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            position: relative;
+            float: left;
+            width: 150px;
+            height: 200px;
+            list-style: none;
+            border: 1px solid red;
+            margin-left: -1px;
+        }
+
+        /* ul li:hover {
+            1. 如果盒子沒有定位，則鼠標經過添加相對定位即可
+            position: relative;
+            border: 1px solid blue;
+        } */
+        ul li:hover {
+            /* 2. 如果有定位，則增加層級 */
+            z-index: 1;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>

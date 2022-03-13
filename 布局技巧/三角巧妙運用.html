@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 測試 */
+        .box1 {
+            width: 0;
+            height: 0;
+            /* border: 10px solid pink; */
+            border-top: 100px solid transparent;
+            border-right: 50px solid red;
+            border-bottom: 0;
+            border-left: 0;
+        }
+
+        /* 統整 */
+        .box2 {
+            width: 0;
+            height: 0;
+            /* 1.只保留右邊的邊框顏色 */
+            border-color: transparent red transparent transparent;
+            /* 2. 樣式都是solid */
+            border-style: solid;
+            /* 上邊框寬度要大，右邊框寬度較小 */
+            border-width: 100px 50px 0 0;
+        }
+
+        .price {
+            width: 160px;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid red;
+            background-size: over;
+            margin: 0px auto;
+        }
+
+        .low {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+
+        .low i {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            /* 1.只保留右邊的邊框顏色 */
+            border-color: transparent #fff transparent transparent;
+            /* 2. 樣式都是solid */
+            border-style: solid;
+            /* 上邊框寬度要大，右邊框寬度較小 */
+            border-width: 24px 10px 0 0;
+        }
+
+        .high {
+            font-size: 12px;
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <hr>
+    <div class="box2"></div>
+    <hr>
+    <div class="price">
+        <span class="low">
+            $1650
+            <i></i>
+        </span>
+        <span class="high">$5600</span>
+    </div>
+</body>
+
+</html>
