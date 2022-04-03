@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 必須是input且有value */
+        input[value] {
+            color: blue;
+        }
+
+        input[value="請輸入"] {
+            color: red;
+        }
+
+        input[type="password"] {
+            color: aqua;
+        }
+
+        /* class以icon為開頭的div */
+        div[class^=icon] {
+            width: 100px;
+            height: 30px;
+            margin-bottom: 10px;
+            background-color: brown;
+        }
+
+        /* class以data結尾的session */
+        section[class$=data] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 利用屬性選擇器就可以不借助於類或者id選擇器 -->
+    <input type="text" value="請輸入">
+    <input type="text" value="123">
+    <input type="text">
+    <hr>
+    <!-- 屬性選擇器可以選擇屬性=值的某些元素 -->
+    <input type="text">
+    <input type="password" name="" id="" value="123">
+    <hr>
+    <!-- 屬性選擇器可以選擇屬性值開頭的某些元素 -->
+    <div class="icon1">小圖標1</div>
+    <div class="icon2">小圖標2</div>
+    <div class="icon3">小圖標3</div>
+    <div class="icon4">小圖標4</div>
+    <div>打醬油</div>
+    <hr>
+    <!-- 屬性選擇器可以選擇屬性值結尾的某些元素 -->
+    <section class="icon1-data">安琪拉</section>
+    <section class="icon2-data">哥斯拉</section>
+    <section class="icon3-data">拉拉拉</section>
+</body>
+
+</html>
